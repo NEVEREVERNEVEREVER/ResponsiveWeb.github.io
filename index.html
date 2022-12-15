@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css.css">
+  <script src="https://kit.fontawesome.com/62064ff48e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ------Below is the Header Section--------- -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/j-removebg-preview.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Desinger</p>
+        <h1>Hi, I'm <span>Nathan Yoo</span></h1>
+      </div>
+    </div>
+  </div>
+  <hr class="solid">
+
+  <!-- ------Below is the About Section--------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/1 (4).png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <div class="description">
+            <p>Money is strongly correlated to survivorship and authority in modern society. Therefore, I had a passion for understanding the function and flow of money since high school, so I decided to major in real estate and finance. Throughout the period, I could successfully learn essential theories, formulas, jargon, and laws by taking various courses (heavily participating in real estate & finance group projects), studying individually by analyzing annual reports of companies in my stock portfolio, and following closely with economic factors (CPI report, FOMC meetings, Consumer Spending Index, etc.) <br><br>Due to several reasons, I decided to change my career to software engineering and recently began studying JAVA individually and planning to work on several projects. I created my responsive web portfolio using HTML, CSS, and Javascript. I want to start a career as a front-end developer and become a full-stack in the future. I would like to incorporate my real estate & finance knowledge into software engineering
+            </p>
+          </div>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Microsoft Office Specialist</span><br>Excel, PowerPoint, Access, Word</li>
+              <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+              <li><span>Real Estate & Finance</span><br>Financial Modeling, Basic Accounting, Anaytical Ability, Problem-solving</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Cash Office Management Assistance</span><br>• Reconcile the previous day's cash bags and empty the safes/prepare the deposit. <br>• Deposit, pick up cash and prepare cash. <br> • Manage cash inflow and outflows between cash office and UW-Madison facilities. <br>• Balance the safes and make changes on. <br> • Manage Cash Dispensing/Deposit machine.</li>
+              <li><span>Village Christian School Finance Assistance</span><br>• Assist the finance controller of the school with house evaluation among other financial projects undertaken by the school and presented the plans before the school officials. <br>• Three months of training in excel, accounting, and finance was taken beforehand of two months of research. <br>• The analysis contributed to deciding the utilization of the real estate property for public rent or international student housing. Due to a lack of budget, the project had been put on hold.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Village Christian High School</span><br>August 2015 - May 2019</li>
+              <li><span>University of Wisconsin Madison</span><br>August 2019 - December 2022</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------Below is the Services Section--------- -->
+  <div id="services">
+    <div class="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div class="services-list">
+            <i class="fa-solid fa-code"></i>
+            <h2>Service #1</h2>
+            <p>Put Description Here</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="services-list">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Service #2</h2>
+            <p>Put Description Here</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="services-list">
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Service #3</h2>
+            <p>Put Description Here</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ------Below is the Portfolio Section--------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Work #1</h3>
+            <p>Put Description Here</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Work #2</h3>
+            <p>Put Description Here</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Work #3</h3>
+            <p>Put Description Here</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- ------Below is the Contact Section--------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> nathan991220@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-square-phone"></i> 708-253-7242</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/seunghyun.yoo.90281"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/seunghyun-nathan-yoo-236b19191/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="put file here" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <!-- ------Below is the Copyright Section--------- -->
+    <div class="copyright">
+      <p>Copyright @Nathan. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+    </div>
+  </div>
+
+
+  <!-- ------Below is the JavaScript Section--------- -->
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemeu.style.right = "0";
+    }
+    function closemenu(){
+      sidemeu.style.right = "-200px";
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZxcNuK6NsrP6cL3ZEOfbc6lsITGv2vAlqJi36QFAlGvV3pfW-u2m3O4GCcFHPyO0_/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html> 
